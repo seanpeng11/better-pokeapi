@@ -8,7 +8,7 @@ export default async function handler(req, res) {
         const pokemonTypes = pokemonData.data.types.map(idx => idx.type.name);
         res.json({
             pokemonName: pokemonData.data.name,
-            sprite: pokemonData.data.sprites.front_default,
+            sprite: pokemonData.data.sprites.other["official-artwork"].front_default,
             types: pokemonTypes
         });
     } catch (error) {
