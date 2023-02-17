@@ -18,7 +18,6 @@ export default function Random() {
     )
     let { name, sprite, types } = data
 
-
     return (
         <>
             <Link href="/"><h1>Better PokeAPI</h1></Link>
